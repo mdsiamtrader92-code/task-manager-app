@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <h1>TaskFlow</h1>
+        <span class="task-count">0 tasks pending</span>
+        <button id="dark-mode-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+            <img src="assets/icons/moon.svg" alt="Dark Mode">
+        </button>
+    </header>
+
+    <main>
+        <section class="task-input-section">
+            <div class="input-container">
+                <input type="text" id="task-input" placeholder="What needs to be done?">
+                <button id="add-task-btn" class="primary-btn">Add Task</button>
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </section>
+
+        <section class="task-list-section">
+            <ul id="task-list">
+                <!-- Tasks will be injected here by JS -->
+            </ul>
+            <div id="empty-state" class="empty-state hidden">
+                <p>Nothing to do! Add your first task above 🎉</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/darkMode.js"></script>
+    <script src="assets/js/tasks.js"></script>
+    <script src="assets/js/filter.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
