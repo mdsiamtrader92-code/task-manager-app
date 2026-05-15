@@ -1,0 +1,16 @@
+@media (max-width: 480px) {
+    /* Bug: Input field and add button overflow on mobile */
+    /*
+  .input-container {
+    flex-wrap: wrap;
+  }
+  
+  #task-input {
+    width: 100%;
+  }
+
+  .primary-btn {
+    width: 100%;
+  }
+  */
+}

@@ -1,0 +1,13 @@
+body.dark {
+    --bg-color: #1a1a1a;
+    --text-color: #f5f5f5;
+    --card-bg: #2d2d2d;
+    --border-color: #404040;
+}
+
+/* body.dark .filter-btn,
+body.dark #task-input {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+} */
